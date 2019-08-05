@@ -5,8 +5,6 @@
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](https://github.com/nereare/pretty-regret/blob/master/code-of-conduct.md)
 [![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/Nereare/pretty-regret)](https://libraries.io/github/Nereare/pretty-regret)
 
-[![Website](https://img.shields.io/website/https/nereare.github.io/pretty-regret)](https://nereare.github.io/pretty-regret/)
-
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt tincidunt urna vitae interdum. Suspendisse id ultricies sem. Pellentesque non felis pellentesque, condimentum sem id, sagittis odio. Donec volutpat mi eros, ut blandit felis congue.
 
 ## Contributing

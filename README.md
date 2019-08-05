@@ -1,9 +1,9 @@
 # Pretty Regret
 
-[![GitHub package.json version](https://img.shields.io/github/package-json/v/Nereare/Hearth)](https://github.com/nereare/Hearth/)
+[![GitHub package.json version](https://img.shields.io/github/package-json/v/Nereare/pretty-regret)](https://github.com/nereare/pretty-regret/)
 [![License](https://img.shields.io/github/license/Nereare/Genesis.svg)](https://github.com/Nereare/Genesis)
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](https://github.com/nereare/Hearth/blob/master/code-of-conduct.md)
-[![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/Nereare/Hearth)](https://libraries.io/github/Nereare/Hearth)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](https://github.com/nereare/pretty-regret/blob/master/code-of-conduct.md)
+[![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/Nereare/pretty-regret)](https://libraries.io/github/Nereare/pretty-regret)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt tincidunt urna vitae interdum. Suspendisse id ultricies sem. Pellentesque non felis pellentesque, condimentum sem id, sagittis odio. Donec volutpat mi eros, ut blandit felis congue.
 
@@ -17,15 +17,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt tincidunt
 
 ## History
 
-See the [Change Log](https://github.com/nereare/Hearth/blob/master/changelog.md) for further history.
+See the [Change Log](https://github.com/nereare/pretty-regret/blob/master/changelog.md) for further history.
 
 ### Versioning
 
-This project uses [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/nereare/Hearth/tags).
+This project uses [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/nereare/pretty-regret/tags).
 
 ## Code of Conduct
 
-Please note that this project is released with a [Contributor Code of Conduct](https://github.com/nereare/Hearth/blob/master/code-of-conduct.md). By participating in this project you agree to abide by its terms.
+Please note that this project is released with a [Contributor Code of Conduct](https://github.com/nereare/pretty-regret/blob/master/code-of-conduct.md). By participating in this project you agree to abide by its terms.
 
 ## Credits and Thanks
 

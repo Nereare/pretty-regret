@@ -32,3 +32,4 @@ Principles of a change log, excerpted from [Keep a Changelog](http://keepachange
  * Changelog file.
  * SCSS stylesheet.
  * Main HTML page.
+ * Favicon.

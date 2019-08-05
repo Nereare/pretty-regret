@@ -1,6 +1,6 @@
 # [Pretty Regret](https://github.com/Nereare/pretty-regret) Change Log
 
-This is the change log to Pretty Regret. For further info on this project, see the [ReadMe file](https://github.com/Nereare/pretty-regret/blob/master/readme.md).
+This is the change log to Pretty Regret. For further info on this project, see the [ReadMe file](README.md).
 
 All notable changes to this project will be documented in this file.
 

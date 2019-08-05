@@ -2,7 +2,7 @@
 
 [![GitHub package.json version](https://img.shields.io/github/package-json/v/Nereare/pretty-regret)](https://github.com/nereare/pretty-regret/)
 [![License](https://img.shields.io/github/license/Nereare/pretty-regret.svg)](https://github.com/Nereare/pretty-regret)
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](https://github.com/nereare/pretty-regret/blob/master/code-of-conduct.md)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](code-of-conduct.md)
 [![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/Nereare/pretty-regret)](https://libraries.io/github/Nereare/pretty-regret)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt tincidunt urna vitae interdum. Suspendisse id ultricies sem. Pellentesque non felis pellentesque, condimentum sem id, sagittis odio. Donec volutpat mi eros, ut blandit felis congue.
@@ -17,7 +17,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt tincidunt
 
 ## History
 
-See the [Change Log](https://github.com/nereare/pretty-regret/blob/master/changelog.md) for further history.
+See the [Change Log](changelog.md) for further history.
 
 ### Versioning
 
@@ -25,7 +25,7 @@ This project uses [SemVer](http://semver.org/) for versioning. For the versions 
 
 ## Code of Conduct
 
-Please note that this project is released with a [Contributor Code of Conduct](https://github.com/nereare/pretty-regret/blob/master/code-of-conduct.md). By participating in this project you agree to abide by its terms.
+Please note that this project is released with a [Contributor Code of Conduct](code-of-conduct.md). By participating in this project you agree to abide by its terms.
 
 ## Legal Stuff
 

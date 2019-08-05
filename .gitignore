@@ -137,8 +137,3 @@ sftp-config.json
 # Visual Studio Code - https://code.visualstudio.com/
 .settings/
 .vscode/
-
-### Compiled CSS ###
-# This project uses SCSS as a preprocessor for stylesheets, so the compiled
-# CSS files should not be committed.
-*.css

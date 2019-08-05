@@ -27,12 +27,7 @@ This project uses [SemVer](http://semver.org/) for versioning. For the versions 
 
 Please note that this project is released with a [Contributor Code of Conduct](https://github.com/nereare/pretty-regret/blob/master/code-of-conduct.md). By participating in this project you agree to abide by its terms.
 
-## Credits and Thanks
+## Legal Stuff
 
-### Credits
-
- * [MIT License Logo](http://excaliburzero.deviantart.com/art/MIT-License-Logo-595847140) by [ExcaliburZero](http://excaliburzero.deviantart.com/), available under a [Creative Commons Attribution 3.0 License](https://creativecommons.org/licenses/by/3.0/)
-
-## License
-
-[![MIT License](http://i.imgur.com/Ze3dFob.png "MIT License")](https://opensource.org/licenses/MIT)
+ * 'd20 System' and the 'd20 System' logo are trademarks of Wizards of the Coast, Inc. and are used according to the terms of the d20 System License. A copy of this License can be found at [www.wizards.com](http://www.wizards.com/default.asp?x=d20/article/srdarchive).
+ * [The Unlicense](https://unlicense.org/) covers any code of this project.

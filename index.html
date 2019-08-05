@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f44336">
+    <title>Random Calculators for D&amp;D 3.5</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="node_modules/@mdi/font/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="node_modules/typeface-merriweather/index.css" />
+    <link rel="stylesheet" href="node_modules/typeface-montserrat/index.css" />
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="node_modules/getskeleton/lib/css/skeleton.css" />
+    <link rel="stylesheet" href="style.min.css" />
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="main.js"></script>
+  </head>
+
+  <body>
+    <header class='container'>
+      <h1>Random Calculators for D&amp;D 3.5</h1>
+      <p>Roll for initiative!</p>
+    </header>
+
+    <main class='container' ng-app="RCDnD">
+      <div class="row">
+        <div class="twelve columns">
+          <h2>Item Creation Feats</h2>
+        </div>
+      </div>
+
+      <!-- Forge Ring -->
+      <form ng-controller="ringCreate">
+        <div class="row">
+          <div class="twelve columns">
+            <h3>Forge Ring</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="two columns">
+            <input type="number" placeholder="Base Price (gp)" class="u-full-width" ng-model="BP" min="1" />
+          </div>
+          <div class="two columns">
+            <input type="number" placeholder="Extra Cost (gp)" class="u-full-width gold" ng-model="EC" min="0" />
+          </div>
+          <div class="two columns">
+            <input type="number" placeholder="Extra XP Cost" class="u-full-width xp" ng-model="XP" min="0" />
+          </div>
+          <div class="six columns">
+            <input type="text" placeholder="Ring Type" class="u-full-width" ng-model="name" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="two columns">
+            <div class="checkbox">
+              <input type="checkbox" ng-model="HB" id="HBfr" />
+              <label for="HBfr"></label>
+            </div>
+          </div>
+          <div class="ten columns">
+            <p>Use the homebrewed option of dealing with time of work as 8 hours per 1,000gp of base cost, instead of the default one day per 1,000gp of base cost?</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="twelve columns">
+            <h5>Ring</h5>
+            <p><strong class="mdi mdi-ring"> Ring of {{ name }} (forge)</strong>: XP cost {{ (BP/25) + XP | ceil | number }}xp, material cost {{ (BP/2) + EC | ceil | number }}gp.</p>
+            <p><strong class="mdi mdi-anvil"> Ring of {{ name }} (mend)</strong>: XP cost {{ ((BP/25) + XP)/2 | ceil | number }}xp, material cost {{ ((BP/2) + EC)/2 | ceil | number }}gp.</p>
+          </div>
+        </div>
+      </form>
+
+      <!-- Scribe Scroll -->
+      <form ng-controller="scrollCreate">
+        <div class='row'>
+          <div class='twelve columns'>
+            <h3>Scribe Scroll</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="one column">
+            <input type="number" placeholder="CL" class="u-full-width" ng-model="CL" min="1" title="Caster Level" />
+          </div>
+          <div class="one column">
+            <input type="number" placeholder="SL" class="u-full-width" ng-model="SL" min="0" title="Spell Level" />
+          </div>
+          <div class="two columns">
+            <input type="number" placeholder="Materials (gp)" class="u-full-width gold" ng-model="mat" min="0" title="Extra material cost required by the spell" />
+          </div>
+          <div class="two columns">
+            <input type="number" placeholder="XP" class="u-full-width xp" ng-model="XP" min="0" title="Extra XP cost required by the spell" />
+          </div>
+          <div class="two columns">
+            <select class="u-full-width" ng-model="type">
+              <option value="" disabled selected hidden>Type</option>
+              <option value="Arcane">Arcane</option>
+              <option value="Divine">Divine</option>
+            </select>
+          </div>
+          <div class="four columns">
+            <input type="text" placeholder="Spell Name" class="u-full-width" ng-model="SN" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="two columns">
+            <div class="checkbox">
+              <input type="checkbox" ng-model="HB" id="HBss" />
+              <label for="HBss"></label>
+            </div>
+          </div>
+          <div class="ten columns">
+            <p>Use the homebrewed option of dealing with time of work as 8 hours per 1,000gp of base cost, instead of the default one day per 1,000gp of base cost?</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="twelve columns">
+            <h5>Scroll</h5>
+            <p><strong class="mdi mdi-script"> Scroll of {{ SN }}</strong>: as the {{ SL }}{{ getOrd(SL) }} level spell, made by {{ getAAn(type) }} {{ type }} spellcaster of Caster Level (CL) {{ CL | number }}{{ getOrd(CL) }}. AC 9, hardness 0, 1 hp, break DC 8. Base price {{ CL * SLp * 25 | number }}gp, XP cost {{ (CL * SLp) + XP | number }}xp, materials cost {{ (CL * SLp * 25)/2 + mat | number }}gp. Takes {{ time }} to scribe.</p>
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

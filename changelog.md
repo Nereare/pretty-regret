@@ -28,7 +28,10 @@ Principles of a change log, excerpted from [Keep a Changelog](http://keepachange
 
 ### Added
  * Code of Conduct from [Contributor Covenant v1.4.1](https://www.contributor-covenant.org/).
- * License, git metafiles and ReadMe file.
+ * Licenses:
+   - [The Unlicense](https://unlicense.org/) for the project;
+   - [Open Game License Version 1.0a](https://www.wizards.com/default.asp?x=d20/oglfaq/20040123f) for the SRD contents.
+ * Git metafiles and ReadMe file.
  * Changelog file.
  * SCSS stylesheet.
  * Main HTML page.
@@ -39,4 +42,7 @@ Principles of a change log, excerpted from [Keep a Changelog](http://keepachange
    - [Skeleton](http://getskeleton.com/) v.`2.0.4-2`;
    - [Normalize.css](https://necolas.github.io/normalize.css/) v.`8.0.1`;
    - [Merriweather typeface](https://fonts.google.com/specimen/Merriweather) v.`0.0.72`;
-   - [Montserrat typeface](https://fonts.google.com/specimen/Montserrat) v.`0.0.75`;
+   - [Montserrat typeface](https://fonts.google.com/specimen/Montserrat) v.`0.0.75`.
+ * Functions:
+   - Forge/Mend Ring;
+   - Scribe Scroll.

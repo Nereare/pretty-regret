@@ -39,7 +39,7 @@ Principles of a change log, excerpted from [Keep a Changelog](http://keepachange
  * Depedencies:
    - [Material Design Icons](https://materialdesignicons.com/) v.`3.8.95`;
    - [AngularJS](https://angularjs.org/) v.`1.7.8`;
-   - [Skeleton](http://getskeleton.com/) v.`2.0.4-2`;
+   - [Skeleton](http://getskeleton.com/) v.`2.0.4`;
    - [Normalize.css](https://necolas.github.io/normalize.css/) v.`8.0.1`;
    - [Merriweather typeface](https://fonts.google.com/specimen/Merriweather) v.`0.0.72`;
    - [Montserrat typeface](https://fonts.google.com/specimen/Montserrat) v.`0.0.75`.

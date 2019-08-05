@@ -7,6 +7,13 @@
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt tincidunt urna vitae interdum. Suspendisse id ultricies sem. Pellentesque non felis pellentesque, condimentum sem id, sagittis odio. Donec volutpat mi eros, ut blandit felis congue.
 
+## Installing
+
+1. Install [Yarn](https://yarnpkg.com/en/);
+2. Clone the repository with `git clone https://github.com/Nereare/pretty-regret.git`;
+3. Get the depedencies with `yarn` or `yarn install`;
+4. Open the `index.html` file.
+
 ## Contributing
 
 1. Fork it!
@@ -15,11 +22,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt tincidunt
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :tada:
 
-## History
+Please, also read our [Contributing Guidelines](CONTRIBUTING.md).
+
+## History & Versioning
 
 See the [Change Log](changelog.md) for further history.
-
-### Versioning
 
 This project uses [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/nereare/pretty-regret/tags).
 

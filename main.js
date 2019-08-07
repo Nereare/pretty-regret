@@ -143,6 +143,37 @@ app.controller("armorCreate", function($scope) {
   });
 });
 
+app.controller("potionCreate", function($scope) {
+  $scope.CL    = "";
+  $scope.SL    = "";
+  $scope.SN    = "";
+  $scope.mat   = "";
+  $scope.SLp   = 0.5;
+  $scope.time  = "";
+  $scope.item  = "Potion";
+
+  $scope.getBasePrice = function(cl, sl) {
+    return cl * sl * 50;
+  };
+
+  $scope.$watch("CL", function(newVal, oldVal, scope) {
+    scope.time = getTime(scope.getBasePrice(newVal, scope.SLp), scope.HB);
+  });
+  $scope.$watch("SL", function(newVal, oldVal, scope) {
+    if(newVal == 0) { scope.SLp = 0.5; }
+    else { scope.SLp = newVal; }
+
+    scope.time = getTime(scope.getBasePrice(scope.CL, scope.SLp), scope.HB);
+  });
+  $scope.$watch("HB", function(newVal, oldVal, scope) {
+    scope.time = getTime(scope.getBasePrice(scope.CL, scope.SLp), newVal);
+  });
+  $scope.$watch("PO", function(newVal, oldVal, scope) {
+    if(newVal) { scope.item = "Oil"; }
+    else { scope.item = "Potion"; }
+  });
+});
+
 app.filter("ceil", function() {
   return function(input) {
     return Math.ceil(input);

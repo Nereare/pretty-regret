@@ -54,6 +54,10 @@ a {
     &:after { content: 'R'; }
     &:before { content: 'S'; }
   }
+  &.PO {
+    &:after { content: 'P'; }
+    &:before { content: 'O'; }
+  }
   &:after {
     content: 'No';
     color: $Gray500;

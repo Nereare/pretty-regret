@@ -30,6 +30,60 @@
         </div>
       </div>
 
+      <!-- Brew Potion -->
+      <form ng-controller="potionCreate">
+        <div class='row'>
+          <div class='twelve columns'>
+            <h3>Brew Potion</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="one column">
+            <input type="number" placeholder="CL" class="u-full-width" ng-model="CL" min="1" title="Caster Level" />
+          </div>
+          <div class="one column">
+            <input type="number" placeholder="SL" class="u-full-width" ng-model="SL" min="0" max="3" title="Spell Level" />
+          </div>
+          <div class="three columns">
+            <input type="number" placeholder="Materials (gp)" class="u-full-width gold" ng-model="mat" min="0" title="Extra material cost required by the spell" />
+          </div>
+          <div class="two columns">
+            <input type="number" placeholder="XP" class="u-full-width xp" ng-model="XP" min="0" title="Extra XP cost required by the spell" />
+          </div>
+          <div class="five columns">
+            <input type="text" placeholder="Spell Name" class="u-full-width" ng-model="SN" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="two columns">
+            <div class="checkbox PO">
+              <input type="checkbox" ng-model="PO" id="PotOil" />
+              <label for="PotOil"></label>
+            </div>
+          </div>
+          <div class="ten columns">
+            <p>Is it a potion (P) or an oil (O)?</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="two columns">
+            <div class="checkbox">
+              <input type="checkbox" ng-model="HB" id="HBbp" />
+              <label for="HBbp"></label>
+            </div>
+          </div>
+          <div class="ten columns">
+            <p>Use the homebrewed option of dealing with time of work as 8 hours per 1,000gp of base cost, instead of the default one day per 1,000gp of base cost?</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="twelve columns">
+            <h5>{{ item }}</h5>
+            <p><strong class="mdi mdi-flask"> {{ item }} of {{ SN }}</strong>: as the {{ SL | ordinal }} level spell, made by a spellcaster of Caster Level (CL) {{ CL | ordinal }}. It contains 1 ounce (one dose), the vial has AC 13, hardness 1, 1 hit point, break DC 12. Base price {{ CL * SLp * 50 | number }}gp, XP cost {{ (CL * SLp * 30) + XP | number }}xp, materials cost {{ (CL * SLp * 50)/2 + mat | number }}gp. Takes {{ time }} to brew.</p>
+          </div>
+        </div>
+      </form>
+
       <!-- Craft Magic Arms And Armor -->
       <form ng-controller="armorCreate">
         <div class="row">

@@ -3,10 +3,10 @@ var app = angular.module("RCDnD", ['ordinal', 'ngRoute']);
 app.config(function($routeProvider) {
   $routeProvider
     .when("/", {
-      templateUrl: "/pages/home.html"
+      templateUrl: "pages/home.html"
     })
     .when("/item", {
-      templateUrl: "/pages/item.html"
+      templateUrl: "pages/item.html"
     });
 });
 

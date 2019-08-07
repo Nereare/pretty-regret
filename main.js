@@ -1,4 +1,14 @@
-var app = angular.module("RCDnD", ['ordinal']);
+var app = angular.module("RCDnD", ['ordinal', 'ngRoute']);
+
+app.config(function($routeProvider) {
+  $routeProvider
+    .when("/", {
+      templateUrl: "/pages/home.html"
+    })
+    .when("/item", {
+      templateUrl: "/pages/item.html"
+    });
+});
 
 app.controller("scrollCreate", function($scope) {
   $scope.CL    = "";

@@ -46,6 +46,10 @@ a {
   position: relative;
   border-radius: 4px;
   border-bottom: 1px solid $Gray500;
+  &.RW {
+    &:after { content: 'R'; }
+    &:before { content: 'WI'; }
+  }
   &:after {
     content: 'No';
     color: $Gray500;

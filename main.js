@@ -28,12 +28,13 @@ app.controller("scrollCreate", function($scope) {
 });
 
 app.controller("ringCreate", function($scope) {
-  $scope.BP   = "";
-  $scope.EC   = "";
-  $scope.XP   = "";
-  $scope.name = "";
-  $scope.time = "";
-  $scope.type = "Ring of ";
+  $scope.BP    = "";
+  $scope.EC    = "";
+  $scope.XP    = "";
+  $scope.name  = "";
+  $scope.time  = "";
+  $scope.type  = "Ring of ";
+  $scope.place = "Ring Type";
 
   $scope.$watch("BP", function(newVal, oldVal, scope) {
     scope.time = getTime((newVal + scope.EC), scope.HB);
@@ -45,8 +46,13 @@ app.controller("ringCreate", function($scope) {
     scope.time = getTime((scope.BP + scope.EC), newVal);
   });
   $scope.$watch("RW", function(newVal, oldVal, scope) {
-    if(newVal) { scope.type = ""; }
-    else { scope.type = "Ring of "; }
+    if(newVal) {
+      scope.type  = "";
+      scope.place = "Wondrous Item"
+    } else {
+      scope.type  = "Ring of ";
+      scope.place = "Ring Type";
+    }
   });
 });
 

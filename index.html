@@ -73,7 +73,7 @@
         </div>
       </form>
 
-      <!-- Forge Ring -->
+      <!-- Forge Ring and Craft Wondrous Item -->
       <form ng-controller="ringCreate">
         <div class="row">
           <div class="twelve columns">
@@ -91,7 +91,7 @@
             <input type="number" placeholder="Extra XP Cost" class="u-full-width xp" ng-model="XP" min="0" />
           </div>
           <div class="six columns">
-            <input type="text" placeholder="Ring Type" class="u-full-width" ng-model="name" />
+            <input type="text" placeholder="{{ place }}" class="u-full-width" ng-model="name" />
           </div>
         </div>
         <div class="row">

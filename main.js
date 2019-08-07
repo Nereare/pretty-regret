@@ -34,6 +34,7 @@ app.controller("ringCreate", function($scope) {
   $scope.name  = "";
   $scope.time  = "";
   $scope.htime = "";
+  $scope.item  = "Ring";
   $scope.type  = "Ring of ";
   $scope.place = "Ring Type";
 
@@ -51,9 +52,11 @@ app.controller("ringCreate", function($scope) {
   });
   $scope.$watch("RW", function(newVal, oldVal, scope) {
     if(newVal) {
+      scope.item  = "Wondrous Item";
       scope.type  = "";
-      scope.place = "Wondrous Item"
+      scope.place = "Wondrous Item";
     } else {
+      scope.item  = "Ring";
       scope.type  = "Ring of ";
       scope.place = "Ring Type";
     }

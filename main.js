@@ -1,4 +1,4 @@
-var app = angular.module("RCDnD", []);
+var app = angular.module("RCDnD", ['ordinal']);
 
 app.controller("scrollCreate", function($scope) {
   $scope.CL    = "";
@@ -13,24 +13,6 @@ app.controller("scrollCreate", function($scope) {
     var patt = new RegExp("^[AEIOUaeiou]");
     if(patt.test(s)) { return "an"; }
     else { return "a"; }
-  };
-  $scope.getOrd = function(n) {
-    switch(n) {
-      case null:
-        return "";
-        break;
-      case 1:
-        return "st";
-        break;
-      case 2:
-        return "nd";
-        break;
-      case 3:
-        return "rd";
-        break;
-      default:
-        return "th";
-    }
   };
   $scope.getBasePrice = function(cl, sl) {
     return cl * sl * 25;
@@ -81,24 +63,6 @@ app.controller("wandCreate", function($scope) {
   $scope.SLp   = 0;
   $scope.time  = "";
 
-  $scope.getOrd = function(n) {
-    switch(n) {
-      case null:
-        return "";
-        break;
-      case 1:
-        return "st";
-        break;
-      case 2:
-        return "nd";
-        break;
-      case 3:
-        return "rd";
-        break;
-      default:
-        return "th";
-    }
-  };
   $scope.getBasePrice = function(cl, sl) {
     return cl * sl * 750;
   };

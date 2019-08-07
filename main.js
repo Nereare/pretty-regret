@@ -33,17 +33,21 @@ app.controller("ringCreate", function($scope) {
   $scope.XP    = "";
   $scope.name  = "";
   $scope.time  = "";
+  $scope.htime = "";
   $scope.type  = "Ring of ";
   $scope.place = "Ring Type";
 
   $scope.$watch("BP", function(newVal, oldVal, scope) {
-    scope.time = getTime((newVal + scope.EC), scope.HB);
+    scope.time  = getTime((newVal + scope.EC), scope.HB);
+    scope.htime = getTime((newVal + scope.EC), scope.HB, 0.5);
   });
   $scope.$watch("EC", function(newVal, oldVal, scope) {
-    scope.time = getTime((scope.BP + newVal), scope.HB);
+    scope.time  = getTime((scope.BP + newVal), scope.HB);
+    scope.htime = getTime((scope.BP + newVal), scope.HB, 0.5);
   });
   $scope.$watch("HB", function(newVal, oldVal, scope) {
-    scope.time = getTime((scope.BP + scope.EC), newVal);
+    scope.time  = getTime((scope.BP + scope.EC), newVal);
+    scope.htime = getTime((scope.BP + scope.EC), newVal, 0.5);
   });
   $scope.$watch("RW", function(newVal, oldVal, scope) {
     if(newVal) {

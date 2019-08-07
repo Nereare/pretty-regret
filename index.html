@@ -170,8 +170,8 @@
         <div class="row">
           <div class="twelve columns">
             <h5>Ring</h5>
-            <p><strong class="mdi mdi-ring"> {{ type }}{{ name }} (forge)</strong>: XP cost {{ (BP/25) + XP | ceil | number }}xp, material cost {{ (BP/2) + EC | ceil | number }}gp.</p>
-            <p><strong class="mdi mdi-anvil"> {{ type }}{{ name }} (mend)</strong>: XP cost {{ ((BP/25) + XP)/2 | ceil | number }}xp, material cost {{ ((BP/2) + EC)/2 | ceil | number }}gp.</p>
+            <p><strong class="mdi mdi-ring"> {{ type }}{{ name }} (forge)</strong>: XP cost {{ (BP/25) + XP | ceil | number }}xp, material cost {{ (BP/2) + EC | ceil | number }}gp. Takes {{ time }} to forge.</p>
+            <p><strong class="mdi mdi-anvil"> {{ type }}{{ name }} (mend)</strong>: XP cost {{ ((BP/25) + XP)/2 | ceil | number }}xp, material cost {{ ((BP/2) + EC)/2 | ceil | number }}gp. Takes {{ htime }} to mend.</p>
           </div>
         </div>
       </form>

@@ -33,7 +33,7 @@
       <form ng-controller="ringCreate">
         <div class="row">
           <div class="twelve columns">
-            <h3>Forge Ring</h3>
+            <h3>Forge Ring &amp; Craft Wondrous Item</h3>
           </div>
         </div>
         <div class="row">
@@ -52,6 +52,17 @@
         </div>
         <div class="row">
           <div class="two columns">
+            <div class="checkbox RW">
+              <input type="checkbox" ng-model="RW" id="RingWond" />
+              <label for="RingWond"></label>
+            </div>
+          </div>
+          <div class="ten columns">
+            <p>Is it a ring (R) or a wondrous item (WI)?</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="two columns">
             <div class="checkbox">
               <input type="checkbox" ng-model="HB" id="HBfr" />
               <label for="HBfr"></label>
@@ -64,8 +75,8 @@
         <div class="row">
           <div class="twelve columns">
             <h5>Ring</h5>
-            <p><strong class="mdi mdi-ring"> Ring of {{ name }} (forge)</strong>: XP cost {{ (BP/25) + XP | ceil | number }}xp, material cost {{ (BP/2) + EC | ceil | number }}gp.</p>
-            <p><strong class="mdi mdi-anvil"> Ring of {{ name }} (mend)</strong>: XP cost {{ ((BP/25) + XP)/2 | ceil | number }}xp, material cost {{ ((BP/2) + EC)/2 | ceil | number }}gp.</p>
+            <p><strong class="mdi mdi-ring"> {{ type }}{{ name }} (forge)</strong>: XP cost {{ (BP/25) + XP | ceil | number }}xp, material cost {{ (BP/2) + EC | ceil | number }}gp.</p>
+            <p><strong class="mdi mdi-anvil"> {{ type }}{{ name }} (mend)</strong>: XP cost {{ ((BP/25) + XP)/2 | ceil | number }}xp, material cost {{ ((BP/2) + EC)/2 | ceil | number }}gp.</p>
           </div>
         </div>
       </form>

@@ -6,7 +6,7 @@ app.controller("scrollCreate", function($scope) {
   $scope.SN    = "";
   $scope.type  = "";
   $scope.mat   = "";
-  $scope.SLp   = 0;
+  $scope.SLp   = 0.5;
   $scope.time  = "";
 
   $scope.getBasePrice = function(cl, sl) {
@@ -68,7 +68,7 @@ app.controller("wandCreate", function($scope) {
   $scope.SL    = "";
   $scope.SN    = "";
   $scope.mat   = "";
-  $scope.SLp   = 0;
+  $scope.SLp   = 0.5;
   $scope.time  = "";
 
   $scope.getBasePrice = function(cl, sl) {

@@ -23,6 +23,17 @@
       <p>Roll for initiative!</p>
     </header>
 
+    <menu class="container">
+      <ul class="row">
+        <li class="two columns"><a href="#secBrew">Potions</a></li>
+        <li class="two columns"><a href="#secWeapArmor">Arms &amp; Armor</a></li>
+        <li class="two columns"><a href="#secRodStaff">Rods &amp; Staffs</a></li>
+        <li class="two columns"><a href="#secWand">Wands</a></li>
+        <li class="two columns"><a href="#secRingWond">Rings &amp; Wondrous</a></li>
+        <li class="two columns"><a href="#secScroll">Scrolls</a></li>
+      </ul>
+    </menu>
+
     <main class='container' ng-app="RCDnD">
       <div class="row">
         <div class="twelve columns">
@@ -34,7 +45,7 @@
       <form ng-controller="potionCreate">
         <div class='row'>
           <div class='twelve columns'>
-            <h3>Brew Potion</h3>
+            <h3 id="secBrew">Brew Potion</h3>
           </div>
         </div>
         <div class="row">
@@ -88,7 +99,7 @@
       <form ng-controller="armorCreate">
         <div class="row">
           <div class="twelve columns">
-            <h3>Craft Magic Arms &amp; Armor</h3>
+            <h3 id="secWeapArmor">Craft Magic Arms &amp; Armor</h3>
           </div>
         </div>
         <div class="row">
@@ -130,7 +141,7 @@
       <form ng-controller="rodCreate">
         <div class="row">
           <div class="twelve columns">
-            <h3>Craft Rod &amp; Staff</h3>
+            <h3 id="secRodStaff">Craft Rod &amp; Staff</h3>
           </div>
         </div>
         <div class="row">
@@ -181,7 +192,7 @@
       <form ng-controller="wandCreate">
         <div class='row'>
           <div class='twelve columns'>
-            <h3>Craft Wand</h3>
+            <h3 id="secWand">Craft Wand</h3>
           </div>
         </div>
         <div class="row">
@@ -224,7 +235,7 @@
       <form ng-controller="ringCreate">
         <div class="row">
           <div class="twelve columns">
-            <h3>Forge Ring &amp; Craft Wondrous Item</h3>
+            <h3 id="secRingWond">Forge Ring &amp; Craft Wondrous Item</h3>
           </div>
         </div>
         <div class="row">
@@ -276,7 +287,7 @@
       <form ng-controller="scrollCreate">
         <div class='row'>
           <div class='twelve columns'>
-            <h3>Scribe Scroll</h3>
+            <h3 id="secScroll">Scribe Scroll</h3>
           </div>
         </div>
         <div class="row">

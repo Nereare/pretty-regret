@@ -121,6 +121,28 @@ app.controller("rodCreate", function($scope) {
   });
 });
 
+app.controller("armorCreate", function($scope) {
+  $scope.BP    = "";
+  $scope.EC    = "";
+  $scope.XP    = "";
+  $scope.name  = "";
+  $scope.time  = "";
+  $scope.htime = "";
+
+  $scope.$watch("BP", function(newVal, oldVal, scope) {
+    scope.time  = getTime((newVal + scope.EC), scope.HB);
+    scope.htime = getTime((newVal + scope.EC), scope.HB, 0.5);
+  });
+  $scope.$watch("EC", function(newVal, oldVal, scope) {
+    scope.time  = getTime((scope.BP + newVal), scope.HB);
+    scope.htime = getTime((scope.BP + newVal), scope.HB, 0.5);
+  });
+  $scope.$watch("HB", function(newVal, oldVal, scope) {
+    scope.time  = getTime((scope.BP + scope.EC), newVal);
+    scope.htime = getTime((scope.BP + scope.EC), newVal, 0.5);
+  });
+});
+
 app.filter("ceil", function() {
   return function(input) {
     return Math.ceil(input);

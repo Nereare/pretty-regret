@@ -30,6 +30,48 @@
         </div>
       </div>
 
+      <!-- Craft Magic Arms And Armor -->
+      <form ng-controller="armorCreate">
+        <div class="row">
+          <div class="twelve columns">
+            <h3>Craft Magic Arms &amp; Armor</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="two columns">
+            <input type="number" placeholder="Base Price (gp)" class="u-full-width" ng-model="BP" min="1" />
+          </div>
+          <div class="two columns">
+            <input type="number" placeholder="Extra Cost (gp)" class="u-full-width gold" ng-model="EC" min="0" />
+          </div>
+          <div class="two columns">
+            <input type="number" placeholder="Extra XP Cost" class="u-full-width xp" ng-model="XP" min="0" />
+          </div>
+          <div class="six columns">
+            <input type="text" placeholder="Weapon/Armor Name" class="u-full-width" ng-model="name" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="two columns">
+            <div class="checkbox">
+              <input type="checkbox" ng-model="HB" id="HBcmaa" />
+              <label for="HBcmaa"></label>
+            </div>
+          </div>
+          <div class="ten columns">
+            <p>Use the homebrewed option of dealing with time of work as 8 hours per 1,000gp of base cost, instead of the default one day per 1,000gp of base cost?</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="twelve columns">
+            <h5>Weapon or Armor</h5>
+            <p><strong class="mdi mdi-sword"> {{ name }} (forge)</strong>: XP cost {{ (BP/25) + XP | ceil | number }}xp, material cost {{ (BP/2) + EC | ceil | number }}gp. Takes {{ time }} to forge.</p>
+            <p><strong class="mdi mdi-anvil"> {{ name }} (mend)</strong>: XP cost {{ ((BP/25) + XP)/2 | ceil | number }}xp, material cost {{ ((BP/2) + EC)/2 | ceil | number }}gp. Takes {{ htime }} to mend.</p>
+            <p><em>Note:</em> The costs do not include the cost of the masterwork weapon/armor needed to enchant. You cannot enchant a non-masterwork weapon/armor.</p>
+          </div>
+        </div>
+      </form>
+
       <!-- Craft Rod and Staff -->
       <form ng-controller="rodCreate">
         <div class="row">

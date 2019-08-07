@@ -170,7 +170,7 @@
         <div class="row">
           <div class="twelve columns">
             <h5>Scroll</h5>
-            <p><strong class="mdi mdi-script"> Scroll of {{ SN }}</strong>: as the {{ SL | ordinal }} level spell, made by {{ getAAn(type) }} {{ type }} spellcaster of Caster Level (CL) {{ CL | ordinal }}. AC 9, hardness 0, 1 hp, break DC 8. Base price {{ CL * SLp * 25 | number }}gp, XP cost {{ (CL * SLp) + XP | number }}xp, materials cost {{ (CL * SLp * 25)/2 + mat | number }}gp. Takes {{ time }} to scribe.</p>
+            <p><strong class="mdi mdi-script"> Scroll of {{ SN }}</strong>: as the {{ SL | ordinal }} level spell, made by {{ type | articulate }} spellcaster of Caster Level (CL) {{ CL | ordinal }}. AC 9, hardness 0, 1 hp, break DC 8. Base price {{ CL * SLp * 25 | number }}gp, XP cost {{ (CL * SLp) + XP | number }}xp, materials cost {{ (CL * SLp * 25)/2 + mat | number }}gp. Takes {{ time }} to scribe.</p>
           </div>
         </div>
       </form>

@@ -9,11 +9,6 @@ app.controller("scrollCreate", function($scope) {
   $scope.SLp   = 0;
   $scope.time  = "";
 
-  $scope.getAAn = function(s) {
-    var patt = new RegExp("^[AEIOUaeiou]");
-    if(patt.test(s)) { return "an"; }
-    else { return "a"; }
-  };
   $scope.getBasePrice = function(cl, sl) {
     return cl * sl * 25;
   };
@@ -84,6 +79,13 @@ app.controller("wandCreate", function($scope) {
 app.filter("ceil", function() {
   return function(input) {
     return Math.ceil(input);
+  };
+});
+app.filter("articulate", function() {
+  return function(input) {
+    var patt = new RegExp("^[AEIOUaeiou]");
+    if(patt.test(input)) { return "an " + input; }
+    else { return "a " + input; }
   };
 });
 

@@ -29,6 +29,49 @@
         </div>
       </div>
 
+      <!-- Craft Wand -->
+      <form ng-controller="wandCreate">
+        <div class='row'>
+          <div class='twelve columns'>
+            <h3>Craft Wand</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="one column">
+            <input type="number" placeholder="CL" class="u-full-width" ng-model="CL" min="1" title="Caster Level" />
+          </div>
+          <div class="one column">
+            <input type="number" placeholder="SL" class="u-full-width" ng-model="SL" min="0" title="Spell Level" />
+          </div>
+          <div class="three columns">
+            <input type="number" placeholder="Materials (gp)" class="u-full-width gold" ng-model="mat" min="0" title="Extra material cost required by the spell" />
+          </div>
+          <div class="two columns">
+            <input type="number" placeholder="XP" class="u-full-width xp" ng-model="XP" min="0" title="Extra XP cost required by the spell" />
+          </div>
+          <div class="five columns">
+            <input type="text" placeholder="Spell Name" class="u-full-width" ng-model="SN" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="two columns">
+            <div class="checkbox">
+              <input type="checkbox" ng-model="HB" id="HBcw" />
+              <label for="HBcw"></label>
+            </div>
+          </div>
+          <div class="ten columns">
+            <p>Use the homebrewed option of dealing with time of work as 8 hours per 1,000gp of base cost, instead of the default one day per 1,000gp of base cost?</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="twelve columns">
+            <h5>Wand</h5>
+            <p><strong class="mdi mdi-auto-fix"> Wand of {{ SN }}</strong>: as the {{ SL }}{{ getOrd(SL) }} level spell, made by a spellcaster of Caster Level (CL) {{ CL | number }}{{ getOrd(CL) }}. AC 7, hardness 5, 5 hit points, break DC 16. Base price {{ CL * SLp * 750 | number }}gp, XP cost {{ (CL * SLp * 30) + (XP * 50) | number }}xp, materials cost {{ (CL * SLp * 750)/2 + (mat * 50) | number }}gp. Takes {{ time }} to craft and has 50 charges when newly crafted.</p>
+          </div>
+        </div>
+      </form>
+
       <!-- Forge Ring -->
       <form ng-controller="ringCreate">
         <div class="row">

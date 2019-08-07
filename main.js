@@ -73,6 +73,50 @@ app.controller("ringCreate", function($scope) {
   });
 });
 
+app.controller("wandCreate", function($scope) {
+  $scope.CL    = "";
+  $scope.SL    = "";
+  $scope.SN    = "";
+  $scope.mat   = "";
+  $scope.SLp   = 0;
+  $scope.time  = "";
+
+  $scope.getOrd = function(n) {
+    switch(n) {
+      case null:
+        return "";
+        break;
+      case 1:
+        return "st";
+        break;
+      case 2:
+        return "nd";
+        break;
+      case 3:
+        return "rd";
+        break;
+      default:
+        return "th";
+    }
+  };
+  $scope.getBasePrice = function(cl, sl) {
+    return cl * sl * 750;
+  };
+
+  $scope.$watch("CL", function(newVal, oldVal, scope) {
+    scope.time = getTime(scope.getBasePrice(newVal, scope.SLp), scope.HB);
+  });
+  $scope.$watch("SL", function(newVal, oldVal, scope) {
+    if(newVal == 0) { scope.SLp = 0.5; }
+    else { scope.SLp = newVal; }
+
+    scope.time = getTime(scope.getBasePrice(scope.CL, scope.SLp), scope.HB);
+  });
+  $scope.$watch("HB", function(newVal, oldVal, scope) {
+    scope.time = getTime(scope.getBasePrice(scope.CL, scope.SLp), newVal);
+  });
+});
+
 app.filter("ceil", function() {
   return function(input) {
     return Math.ceil(input);

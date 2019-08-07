@@ -44,5 +44,7 @@ Principles of a change log, excerpted from [Keep a Changelog](http://keepachange
    - [Merriweather typeface](https://fonts.google.com/specimen/Merriweather) v.`0.0.72`;
    - [Montserrat typeface](https://fonts.google.com/specimen/Montserrat) v.`0.0.75`.
  * Functions:
+   - Craft Wand;
+   - Craft Wondrous Item;
    - Forge/Mend Ring;
    - Scribe Scroll.

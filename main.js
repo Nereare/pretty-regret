@@ -82,6 +82,38 @@ app.controller("wandCreate", function($scope) {
   });
 });
 
+app.controller("rodCreate", function($scope) {
+  $scope.BP      = "";
+  $scope.EC      = "";
+  $scope.XP      = "";
+  $scope.name    = "";
+  $scope.time    = "";
+  $scope.charges = "";
+  $scope.type    = "Rod";
+  $scope.place   = "Rod Name";
+
+  $scope.$watch("BP", function(newVal, oldVal, scope) {
+    scope.time = getTime((newVal + scope.EC), scope.HB);
+  });
+  $scope.$watch("EC", function(newVal, oldVal, scope) {
+    scope.time = getTime((scope.BP + newVal), scope.HB);
+  });
+  $scope.$watch("HB", function(newVal, oldVal, scope) {
+    scope.time = getTime((scope.BP + scope.EC), newVal);
+  });
+  $scope.$watch("RS", function(newVal, oldVal, scope) {
+    if(newVal) {
+      scope.charges = " and has 50 charges when newly crafted.";
+      scope.type    = "Staff";
+      scope.place   = "Staff Name"
+    } else {
+      scope.charges = "";
+      scope.type    = "Rod";
+      scope.place   = "Rod Name";
+    }
+  });
+});
+
 app.filter("ceil", function() {
   return function(input) {
     return Math.ceil(input);

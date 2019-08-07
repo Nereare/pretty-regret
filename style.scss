@@ -50,6 +50,10 @@ a {
     &:after { content: 'R'; }
     &:before { content: 'WI'; }
   }
+  &.RS {
+    &:after { content: 'R'; }
+    &:before { content: 'S'; }
+  }
   &:after {
     content: 'No';
     color: $Gray500;

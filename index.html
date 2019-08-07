@@ -30,6 +30,57 @@
         </div>
       </div>
 
+      <!-- Craft Rod and Staff -->
+      <form ng-controller="rodCreate">
+        <div class="row">
+          <div class="twelve columns">
+            <h3>Craft Rod &amp; Staff</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="two columns">
+            <input type="number" placeholder="Base Price (gp)" class="u-full-width" ng-model="BP" min="1" />
+          </div>
+          <div class="two columns">
+            <input type="number" placeholder="Extra Cost (gp)" class="u-full-width gold" ng-model="EC" min="0" />
+          </div>
+          <div class="two columns">
+            <input type="number" placeholder="Extra XP Cost" class="u-full-width xp" ng-model="XP" min="0" />
+          </div>
+          <div class="six columns">
+            <input type="text" placeholder="{{ place }}" class="u-full-width" ng-model="name" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="two columns">
+            <div class="checkbox RS">
+              <input type="checkbox" ng-model="RS" id="RodStaff" />
+              <label for="RodStaff"></label>
+            </div>
+          </div>
+          <div class="ten columns">
+            <p>Is it a rod (R) or a staff (S)?</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="two columns">
+            <div class="checkbox">
+              <input type="checkbox" ng-model="HB" id="HBfr" />
+              <label for="HBfr"></label>
+            </div>
+          </div>
+          <div class="ten columns">
+            <p>Use the homebrewed option of dealing with time of work as 8 hours per 1,000gp of base cost, instead of the default one day per 1,000gp of base cost?</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="twelve columns">
+            <h5>{{ type }}</h5>
+            <p><strong class="mdi mdi-anvil"> {{ name }}</strong>: XP cost {{ (BP/25) + XP | ceil | number }}xp, material cost {{ (BP/2) + EC | ceil | number }}gp. Takes {{ time }} to craft{{ charges }}.</p>
+          </div>
+        </div>
+      </form>
+
       <!-- Craft Wand -->
       <form ng-controller="wandCreate">
         <div class='row'>

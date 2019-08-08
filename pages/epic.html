@@ -78,18 +78,51 @@
       </div>
 
       <!-- Spell Metadata -->
-      <ul>
-        <li><em>Spellcraft DC:</em> {{ dc | getFinalDC }}</li>
-        <li><em>Components:</em> {{ components | getComponents: mySeeds:spellType }}</li>
-        <li><em>Casting Time:</em> {{ ct }}</li>
-        <li><em>Range:</em> {{ range }}</li>
-        <li><em>Target:</em> {{ target }}</li>
-        <li><em>Saving Throw:</em> {{ save | getSavingThrow }}</li>
-        <li><em>Duration:</em> {{ duration | getDuration }}</li>
-        <li><em>Spell Resistance:</em> {{ spellResist | getYesNo }}</li>
-        <li><em>Developed As:</em> {{ spellType | getEpicSpellType }}</li>
-        <li><em>To Develop:</em> {{  }}</li>
-      </ul>
+      <div class="metadata">
+        <div class="row">
+          <div class="three columns"><p>Spellcraft DC:</p></div>
+          <div class="nine columns"><p>{{ dc | getFinalDC }}</p></div>
+        </div>
+        <div class="row">
+          <div class="three columns"><p>Components:</p></div>
+          <div class="nine columns"><p>{{ components | getComponents:	mySeeds:spellType }}</p></div>
+        </div>
+        <div class="row">
+          <div class="three columns"><p>Casting Time:</p></div>
+          <div class="nine columns"><p>{{ ct }}</p></div>
+        </div>
+        <div class="row">
+          <div class="three columns"><p>Range:</p></div>
+          <div class="nine columns"><p>{{ range }}</p></div>
+        </div>
+        <div class="row">
+          <div class="three columns"><p>Target:</p></div>
+          <div class="nine columns"><p>{{ target }}</p></div>
+        </div>
+        <div class="row">
+          <div class="three columns"><p>Saving Throw:</p></div>
+          <div class="nine columns"><p>{{ save | getSavingThrow }}</p></div>
+        </div>
+        <div class="row">
+          <div class="three columns"><p>Duration:</p></div>
+          <div class="nine columns"><p>{{ duration | getDuration }}</p></div>
+        </div>
+        <div class="row">
+          <div class="three columns"><p>Spell Resistance:</p></div>
+          <div class="nine columns"><p>{{ spellResist | getYesNo }}</p></div>
+        </div>
+        <div class="row">
+          <div class="three columns"><p>Developed As:</p></div>
+          <div class="nine columns"><p>{{ spellType | getEpicSpellType }}</p></div>
+        </div>
+        <div class="row">
+          <div class="three columns"><p>To Develop:</p></div>
+          <div class="nine columns"><p>Sint litteris aliquip de ne elit elit esse ingeniis, cupidatat ubi vidisse, ita
+            sed concursionibus, malis possumus te illustriora, illum aliquip transferrem qui
+            est culpa tempor fugiat arbitror ab qui probant iis mandaremus. Id cillum o
+            culpa.</p></div>
+        </div>
+      </div>
 
       <!-- Spell Description -->
       <div class="row">

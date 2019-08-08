@@ -266,3 +266,32 @@ nav {
     border-bottom: 1px solid $Red500;
   }
 }
+.finishedSpell {
+  .header {
+    :nth-child(2) {
+      font-size: 1.5em;
+      color: $Orange500;
+      margin-bottom: 0.1em;
+    }
+    :nth-child(3) {
+      font-size: 0.8em;
+      font-style: italic;
+    }
+  }
+  .metadata {
+    margin-bottom: 0.5em;
+    p { margin-bottom: 0; }
+    .row {
+      @media screen and (max-width: 549px) { margin-bottom: 0.5em; }
+      :nth-child(1) p {
+        color: $Gray500;
+        text-align: center;
+        @media screen and (min-width: 550px) { text-align: right; }
+      }
+      :nth-child(2) p {
+        text-align: center;
+        @media screen and (min-width: 550px) { text-align: justify; }
+      }
+    }
+  }
+}

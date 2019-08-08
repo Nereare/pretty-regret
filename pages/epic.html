@@ -50,13 +50,40 @@
       </div>
     </section>
 
-
-
+    <!-- Name and Effect -->
     <section>
       <div class="row">
         <div class="twelve columns">
+          <h3>Name &amp; Effect</h3>
+          <input type="text" placeholder="Spell Name" class="u-full-width" ng-model="spellName" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve columns">
+          <textarea class="u-full-width" ng-model="spellDescription"></textarea>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="twelve columns finishedSpell">
           <h3>Result</h3>
-          {{ dc }}, {{ seeds[mainSeed] }}
+          <p class="mdi mdi-auto-fix"> {{ name }}</p>
+          <p>{{ school }}{{ subschool }}{{ descriptors }}</p>
+          <ul>
+            <li><em>Spellcraft DC:</em> {{ dc | getFinalDC }}</li>
+            <li><em>Components:</em> {{ components | getComponents: mySeeds:spellType }}</li>
+            <li><em>Casting Time:</em> {{ ct }}</li>
+            <li><em>Range:</em> {{ range }}</li>
+            <li><em>Target:</em> {{ target }}</li>
+            <li><em>Saving Throw:</em> {{ save | getSavingThrow }}</li>
+            <li><em>Duration:</em> {{ duration | getDuration }}</li>
+            <li><em>Spell Resistance:</em> {{ spellResist | getYesNo }}</li>
+            <li><em>Developed As:</em> {{ spellType | getEpicSpellType }}</li>
+            <li><em>To Develop:</em> {{  }}</li>
+          </ul>
+          <p>{{ dc }}, {{ mySeeds }}</p>
         </div>
       </div>
     </section>

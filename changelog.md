@@ -37,18 +37,21 @@ Principles of a change log, excerpted from [Keep a Changelog](http://keepachange
  * Main HTML page.
  * Favicon.
  * Depedencies:
-   - [Material Design Icons](https://materialdesignicons.com/) v.`3.8.95`;
+   - [Material Design Icons](https://materialdesignicons.com/) v.`3.8.96`;
    - [AngularJS](https://angularjs.org/) v.`1.7.8`;
+   - [Angular Ordinal Filter](https://www.npmjs.com/package/angular-ordinal) v.`2.1.3`;
+   - [Angular Route](https://www.npmjs.com/package/angular-route) v.`1.7.8`;
    - [Skeleton](http://getskeleton.com/) v.`2.0.4`;
    - [Normalize.css](https://necolas.github.io/normalize.css/) v.`8.0.1`;
    - [Merriweather typeface](https://fonts.google.com/specimen/Merriweather) v.`0.0.72`;
    - [Montserrat typeface](https://fonts.google.com/specimen/Montserrat) v.`0.0.75`.
  * Functions:
-   - Brew Potion;
-   - Craft Magic Arms And Armor;
-   - Craft Rod;
-   - Craft Staff;
-   - Craft Wand;
-   - Craft Wondrous Item;
-   - Forge/Mend Ring;
-   - Scribe Scroll.
+   - Item Creation:
+     - Brew Potion;
+     - Craft Magic Arms And Armor;
+     - Craft Rod;
+     - Craft Staff;
+     - Craft Wand;
+     - Craft Wondrous Item;
+     - Forge/Mend Ring;
+     - Scribe Scroll.

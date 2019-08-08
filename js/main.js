@@ -25,6 +25,11 @@ app.filter("articulate", function() {
     else { return "a " + input; }
   };
 });
+app.filter("getYesNo", function() {
+  return function(input) {
+    return (input) ? "Yes" : "No";
+  };
+});
 
 function getTime(baseCost, hb, mod = 1) {
   if(hb) {

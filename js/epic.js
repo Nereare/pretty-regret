@@ -568,8 +568,14 @@ app.controller("epicSpell", function($scope) {
   };
   $scope.spellResist  = false;
 
-  $scope.name         = "";
-  $scope.description  = "";
+  $scope.factors      = {
+    plus   : {},
+    minus  : {},
+    global : {
+      permanent : false,
+      stone     : false
+    }
+  };
 
   $scope.$watch("seedList", function(newVal, oldVal, scope) {
     scope.mySeeds            = {};

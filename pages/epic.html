@@ -1,0 +1,65 @@
+<main class="container">
+  <form ng-controller="epicSpell">
+    <div class="row">
+      <div class="twelve columns">
+        <h2>Epic Spell Generator</h2>
+      </div>
+    </div>
+
+    <!-- Seeds -->
+    <section>
+      <div class="row">
+        <div class="twelve columns">
+          <h3>Seeds</h3>
+          <div class="seedList">
+            <span ng-repeat="seed in seeds">
+              <input type="checkbox" name="seed" id="seed_{{ seed.code }}" value="{{ seed.code }}" ng-model="seedList[seed.code]" />
+              <label for="seed_{{ seed.code }}">{{ seed.name }}</label>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Seed -->
+    <section>
+      <div class="row">
+        <div class="twelve columns">
+          <h3>Main Seed</h3>
+          <p>Please, select one of the seeds below.</p>
+          <div class="seedList">
+            <span ng-repeat="seed in mySeeds">
+              <input type="checkbox" name="mainSeed" id="mainSeed_{{ seed.code }}" value="{{ seed.code }}" ng-model="mainSeedList[seed.code]" />
+              <label for="mainSeed_{{ seed.code }}">{{ seed.name }}</label>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Type -->
+    <section>
+      <div class="row">
+        <div class="twelve columns">
+          <h3>Spell Type</h3>
+          <div class="checkbox ESType">
+            <input type="checkbox" ng-model="type" id="spellType" />
+            <label for="spellType"></label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section>
+      <div class="row">
+        <div class="twelve columns">
+          <h3>Result</h3>
+          {{ dc }}, {{ seeds[mainSeed] }}
+        </div>
+      </div>
+    </section>
+
+  </form>
+</main>

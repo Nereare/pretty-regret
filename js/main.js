@@ -7,6 +7,9 @@ app.config(function($routeProvider) {
     })
     .when("/item", {
       templateUrl: "pages/item.html"
+    })
+    .when("/epic", {
+      templateUrl: "pages/epic.html"
     });
 });
 

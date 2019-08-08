@@ -46,7 +46,8 @@ html, body, p {
 }
 h1, h2, h3, h4, h5, h6 { font-family: 'Merriweather', serif; }
 h1, h2 { @include fontcolor_gradient($Red500, $Red900); }
-h3, h4, h5, h6 { @include fontcolor_gradient($Orange500, $Orange900); }
+h3, h4 { @include fontcolor_gradient($Orange500, $Orange900); }
+h5, h6 { @include fontcolor_gradient($Gray100, $Gray500); }
 a {
   text-decoration: none;
   color: $Red500;

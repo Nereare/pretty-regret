@@ -181,6 +181,13 @@ input[type="button"].button-primary:focus {
   border-color: $Red900;
 }
 
+form { margin: 0; }
+section {
+  margin-bottom: 3em;
+  border-radius: 0.3em;
+  border-bottom: 1px solid $Orange500;
+  &:last-child { border-bottom: none; }
+}
 header {
   border-bottom: solid $Gray100 .2em;
   margin-bottom: 2em !important;

@@ -22,7 +22,7 @@
 
       <div class="row">
         <div class="twelve columns">
-          <h4>Main Seed</h3>
+          <h4>Main Seed</h4>
           <p>Please, select one of the seeds below.</p>
           <div class="seedList">
             <span ng-repeat="seed in mySeeds">
@@ -118,16 +118,33 @@
         <!-- Backslash Damage (-) -->
         <div class="four columns">
           <h5>Backslash Damage</h5>
+          <input type="number" placeholder="d6's of damage" title="d6's of damage" class="u-full-width" ng-model="factors.minus.backslash" min=0 />
         </div>
 
         <!-- Burn XP (-) -->
         <div class="four columns">
           <h5>Burn XP</h5>
+          <input type="number" placeholder="XP to burn" title="XP to burn" class="u-full-width" ng-model="factors.minus.xp.amount" min=0 max=20000 />
+          <p>By default, we count XP against only the main caster. Check below if every caster (rituals) must contribute.</p>
+          <div class="factors">
+            <input type="checkbox" name="factorMinusXP" id="factorMinusXP" value="true" ng-model="factors.minus.xp.all" />
+            <label for="factorMinusXP">All casters</label>
+          </div>
         </div>
 
         <!-- Ritual (-) -->
         <div class="four columns">
           <h5>Ritual Casting</h5>
+          <input type="number" placeholder="1st level Slots" title="1st level Slots" class="u-full-width" ng-model="factors.minus.ritual.slot1" min=0 />
+          <input type="number" placeholder="2nd level Slots" title="2nd level Slots" class="u-full-width" ng-model="factors.minus.ritual.slot2" min=0 />
+          <input type="number" placeholder="3rd level Slots" title="3rd level Slots" class="u-full-width" ng-model="factors.minus.ritual.slot3" min=0 />
+          <input type="number" placeholder="4th level Slots" title="4th level Slots" class="u-full-width" ng-model="factors.minus.ritual.slot4" min=0 />
+          <input type="number" placeholder="5th level Slots" title="5th level Slots" class="u-full-width" ng-model="factors.minus.ritual.slot5" min=0 />
+          <input type="number" placeholder="6th level Slots" title="6th level Slots" class="u-full-width" ng-model="factors.minus.ritual.slot6" min=0 />
+          <input type="number" placeholder="7th level Slots" title="7th level Slots" class="u-full-width" ng-model="factors.minus.ritual.slot7" min=0 />
+          <input type="number" placeholder="8th level Slots" title="8th level Slots" class="u-full-width" ng-model="factors.minus.ritual.slot8" min=0 />
+          <input type="number" placeholder="9th level Slots" title="9th level Slots" class="u-full-width" ng-model="factors.minus.ritual.slot9" min=0 />
+          <input type="number" placeholder="Epic level Slots" title="Epic level Slots" class="u-full-width" ng-model="factors.minus.ritual.slotEp" min=0 />
         </div>
       </div>
 
@@ -142,10 +159,18 @@
         <!-- Permanency -->
         <div class="six columns">
           <h5>Make Permanent</h5>
+          <div class="factors">
+            <input type="checkbox" name="factorGlobalPermanent" id="factorGlobalPermanent" value="true" ng-model="factors.global.permanent" />
+            <label for="factorGlobalPermanent">Permanent</label>
+          </div>
         </div>
         <!-- Stone Tablet -->
         <div class="six columns">
           <h5>Record on Stone</h5>
+          <div class="factors">
+            <input type="checkbox" name="factorGlobalStone" id="factorGlobalStone" value="true" ng-model="factors.global.stone" />
+            <label for="factorGlobalStone">Record on stone</label>
+          </div>
         </div>
       </div>
     </section>

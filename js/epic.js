@@ -570,7 +570,25 @@ app.controller("epicSpell", function($scope) {
 
   $scope.factors      = {
     plus   : {},
-    minus  : {},
+    minus  : {
+      backslash : "",
+      xp        : {
+        amount  : "",
+        all     : false
+      },
+      ritual    : {
+        slot1   : "",
+        slot2   : "",
+        slot3   : "",
+        slot4   : "",
+        slot5   : "",
+        slot6   : "",
+        slot7   : "",
+        slot8   : "",
+        slot9   : "",
+        slotEp  : ""
+      }
+    },
     global : {
       permanent : false,
       stone     : false
@@ -644,6 +662,10 @@ app.controller("epicSpell", function($scope) {
       else { scope.spellType.text = "Arcane"; }
     }
   });
+
+  // ##################################
+  // # HERE THERE BE FACTORS HANDLING #
+  // ##################################
 });
 
 app.filter("getFinalDC", function() {

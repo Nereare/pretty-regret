@@ -656,7 +656,7 @@ app.filter("getComponents", function() {
     comps = "V, S";
     if(input.isRitual) { comps += ", Ritual"; }
     if(input.xp)       { comps += ", XP"; }
-    if(mustBeDivine(seeds) || type == "Divine") { comps += ", DF"; }
+    if(mustBeDivine(seeds) || type.text == "Divine") { comps += ", DF"; }
     return comps;
   };
 });

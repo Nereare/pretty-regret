@@ -35,6 +35,29 @@ $LBlue900:  #01579b;
   -webkit-background-clip: text;
   background-clip: text;
 }
+@mixin checkStyle($width) {
+  text-align: center;
+  input[type="radio"], input[type="checkbox"] {
+    visibility: hidden;
+    display: none;
+  }
+  label {
+    display: inline-block;
+
+    @include skeleton-box();
+    color: $Gray100;
+    cursor: pointer;
+
+    margin: 0.5em;
+    padding: 0 1em;
+    min-width: $width;
+  }
+  input[type="checkbox"]:checked + label {
+    color: $Red500;
+    background: $Gray100;
+    border-bottom: 1px solid $Red500;
+  }
+}
 
 html, body, p {
   border: 0;
@@ -245,27 +268,10 @@ nav {
   }
 }
 .seedList {
-  text-align: center;
-  input[type="radio"], input[type="checkbox"] {
-    visibility: hidden;
-    display: none;
-  }
-  label {
-    display: inline-block;
-
-    @include skeleton-box();
-    color: $Gray100;
-    cursor: pointer;
-
-    margin: 0.5em;
-    padding: 0 1em;
-    min-width: 20%;
-  }
-  input[type="checkbox"]:checked + label {
-    color: $Red500;
-    background: $Gray100;
-    border-bottom: 1px solid $Red500;
-  }
+  @include checkStyle(20%);
+}
+.factors {
+  @include checkStyle(75%);
 }
 .finishedSpell {
   .header {

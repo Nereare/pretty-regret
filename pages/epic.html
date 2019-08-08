@@ -94,16 +94,22 @@
         <!-- Saving Throw Factors (+) -->
         <div class="four columns">
           <h5>Saving Throw</h5>
+          <input type="number" placeholder="Save DC Bonus" title="Save DC Bonus" class="u-full-width" ng-model="factors.plus.save" min=0 />
         </div>
 
         <!-- Spell Resistance Factors (+) -->
         <div class="four columns">
           <h5>Spell Resistance</h5>
+          <p>Bonus on caster level checks to...</p>
+          <input type="number" placeholder="...beat target's resistance" title="...beat target's resistance" class="u-full-width" ng-model="factors.plus.resist.resist" min=0 />
+          <input type="number" placeholder="...beat dispel effect" title="...beat dispel effect" class="u-full-width" ng-model="factors.plus.resist.dispel" min=0 />
         </div>
 
         <!-- Damage Factors (+/-) -->
         <div class="four columns">
           <h5>Damage</h5>
+          <input type="number" placeholder="Changes of dmg dice" title="Changes of dmg dice" class="u-full-width" ng-model="factors.plus.damage" />
+          <p><em>E.g.</em>, a spell deals a number of d8s of damage. Changing this to d10s of damage is +1, changing to d4s of damage is -2.</p>
         </div>
       </div>
 

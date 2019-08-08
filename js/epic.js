@@ -569,7 +569,14 @@ app.controller("epicSpell", function($scope) {
   $scope.spellResist  = false;
 
   $scope.factors      = {
-    plus   : {},
+    plus   : {
+      save      : "",
+      resist    : {
+        resist  : "",
+        dispel  : ""
+      },
+      damage    : ""
+    },
     minus  : {
       backslash : "",
       xp        : {

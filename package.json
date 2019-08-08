@@ -1,6 +1,6 @@
 {
   "name": "pretty-regret",
-  "version": "0.18.14-alpha",
+  "version": "0.19.14-alpha",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt tincidunt urna vitae interdum. Suspendisse id ultricies sem. Pellentesque non felis pellentesque, condimentum sem id, sagittis odio. Donec volutpat mi eros, ut blandit felis congue.",
   "main": "index.html",
   "repository": "https://github.com/Nereare/pretty-regret.git",
@@ -12,8 +12,11 @@
     "angular": "^1.7.8",
     "angular-ordinal": "^2.1.3",
     "angular-route": "^1.7.8",
+    "angular-sanitize": "^1.7.8",
     "getskeleton": "2.0.4",
+    "ng-showdown": "^1.1.0",
     "normalize.css": "^8.0.1",
+    "showdown": "^1.9.0",
     "typeface-merriweather": "^0.0.72",
     "typeface-montserrat": "^0.0.75"
   }

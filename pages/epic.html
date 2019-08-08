@@ -61,29 +61,40 @@
       <div class="row">
         <div class="twelve columns">
           <textarea class="u-full-width" ng-model="spellDescription"></textarea>
+          <p>You may use Markdown on the description!</p>
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="row">
-        <div class="twelve columns finishedSpell">
+    <!-- Finished Spell Output -->
+    <section class="finishedSpell">
+      <!-- Spell Header -->
+      <div class="row header">
+        <div class="twelve columns">
           <h3>Result</h3>
-          <p class="mdi mdi-auto-fix"> {{ name }}</p>
+          <p class="mdi mdi-auto-fix"> {{ spellName }}</p>
           <p>{{ school }}{{ subschool }}{{ descriptors }}</p>
-          <ul>
-            <li><em>Spellcraft DC:</em> {{ dc | getFinalDC }}</li>
-            <li><em>Components:</em> {{ components | getComponents: mySeeds:spellType }}</li>
-            <li><em>Casting Time:</em> {{ ct }}</li>
-            <li><em>Range:</em> {{ range }}</li>
-            <li><em>Target:</em> {{ target }}</li>
-            <li><em>Saving Throw:</em> {{ save | getSavingThrow }}</li>
-            <li><em>Duration:</em> {{ duration | getDuration }}</li>
-            <li><em>Spell Resistance:</em> {{ spellResist | getYesNo }}</li>
-            <li><em>Developed As:</em> {{ spellType | getEpicSpellType }}</li>
-            <li><em>To Develop:</em> {{  }}</li>
-          </ul>
-          <p>{{ dc }}, {{ mySeeds }}</p>
+        </div>
+      </div>
+
+      <!-- Spell Metadata -->
+      <ul>
+        <li><em>Spellcraft DC:</em> {{ dc | getFinalDC }}</li>
+        <li><em>Components:</em> {{ components | getComponents: mySeeds:spellType }}</li>
+        <li><em>Casting Time:</em> {{ ct }}</li>
+        <li><em>Range:</em> {{ range }}</li>
+        <li><em>Target:</em> {{ target }}</li>
+        <li><em>Saving Throw:</em> {{ save | getSavingThrow }}</li>
+        <li><em>Duration:</em> {{ duration | getDuration }}</li>
+        <li><em>Spell Resistance:</em> {{ spellResist | getYesNo }}</li>
+        <li><em>Developed As:</em> {{ spellType | getEpicSpellType }}</li>
+        <li><em>To Develop:</em> {{  }}</li>
+      </ul>
+
+      <!-- Spell Description -->
+      <div class="row">
+        <div class="twelve columns">
+          <div markdown-to-html="spellDescription"></div>
         </div>
       </div>
     </section>

@@ -41,6 +41,9 @@ Principles of a change log, excerpted from [Keep a Changelog](http://keepachange
    - [AngularJS](https://angularjs.org/) v.`1.7.8`;
    - [Angular Ordinal Filter](https://www.npmjs.com/package/angular-ordinal) v.`2.1.3`;
    - [Angular Route](https://www.npmjs.com/package/angular-route) v.`1.7.8`;
+   - [Angular Sanitize](https://docs.angularjs.org/api/ngSanitize) v.`1.7.8`;
+   - [Angular Showdown](https://github.com/showdownjs/ng-showdown) v.`1.1.0`;
+   - [Showdown](http://showdownjs.com/) v.`1.9.0`;
    - [Skeleton](http://getskeleton.com/) v.`2.0.4`;
    - [Normalize.css](https://necolas.github.io/normalize.css/) v.`8.0.1`;
    - [Merriweather typeface](https://fonts.google.com/specimen/Merriweather) v.`0.0.72`;

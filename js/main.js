@@ -1,4 +1,4 @@
-var app = angular.module("RCDnD", ['ordinal', 'ngRoute']);
+var app = angular.module("RCDnD", ['ordinal', 'ngRoute', 'ngSanitize', 'ng-showdown']);
 
 app.config(function($routeProvider) {
   $routeProvider

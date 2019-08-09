@@ -11,16 +11,38 @@ todo:
 # https://github.com/behaviorbot/new-issue-welcome #
 ####################################################
 newIssueWelcomeComment: >
-  Thanks for opening your first issue here! Be sure to follow the issue template!
+  Thanks for opening your first issue here! :sparkles:
+
+  This repository has an **issue template** and we ask that you follow it.
+
+  Also, note that there is a **[Code of Conduct](CODE-OF-CONDUCT.md)**. Please take a time to read it.
+
+  The :busts_in_silhouette: humans will be here shortly to assess your issue! And thanks once again for your first issue! :tada:
+
+  ---
+
+  :robot: Bee-bop! I am a [robot](https://github.com/apps/welcome)!
 ####################################################
 #                  new-pr-welcome                  #
 # https://github.com/behaviorbot/new-pr-welcome    #
 ####################################################
 newPRWelcomeComment: >
-  Thanks for opening this pull request! Please check out our contributing guidelines.
+  Thanks for opening this pull request! :octocat:
+
+  Please check out our [Contributing Guidelines](CONTRIBUTING.md) and our [Code of Conduct](CODE-OF-CONDUCT.md).
+
+  ---
+
+  :robot: Bee-bop! I am a [robot](https://github.com/apps/welcome)!
 ####################################################
 #                  first-pr-merge                  #
 # https://github.com/behaviorbot/first-pr-merge    #
 ####################################################
 firstPRMergeComment: >
-  Congrats on merging your first pull request! We here at behaviorbot are proud of you!
+  Congrats on merging your first pull request! :+1:
+
+  Keep on coding! :tada:
+
+  ---
+
+  :robot: Bee-bop! I am a [robot](https://github.com/apps/welcome)!

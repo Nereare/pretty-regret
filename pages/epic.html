@@ -87,6 +87,14 @@
         <!-- Area Factors (+) -->
         <div class="four columns">
           <h5>Area</h5>
+          <input type="number" placeholder="Increase area (times)" title="Multiply the radius by this factor" class="u-full-width" ng-model="factors.plus.area.increase" min=1 />
+          <h6>Or change from area to...</h6>
+          <div class="factors">
+            <span ng-repeat="opt in areaTo">
+              <input type="checkbox" name="factorPlusAreato{{ opt.id }}" id="factorPlusAreato{{ opt.id }}" value="{{ opt.id }}" ng-model="areaToList[opt.id]" />
+              <label for="factorPlusAreato{{ opt.id }}">{{ opt.text }}</label>
+            </span>
+          </div>
         </div>
       </div>
 

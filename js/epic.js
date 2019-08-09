@@ -529,6 +529,50 @@ app.controller("epicSpell", function($scope) {
       link: "http://www.d20srd.org/srd/epic/seeds/ward.htm"
     }
   };
+  $scope.areaTo = {
+    1: {
+      id    : 1,
+      text  : "Cylinder",
+      new   : "Cylinder (10ft radius, 30ft high)",
+      value : 2
+    },
+    2: {
+      id    : 2,
+      text  : "40ft Cone",
+      new   : "40ft cone",
+      value : 2
+    },
+    3: {
+      id    : 3,
+      text  : "Four 10ft Cubes",
+      new   : "Four 10ft sided cubes",
+      value : 2
+    },
+    4: {
+      id    : 4,
+      text  : "20ft Radius",
+      new   : "20ft radius",
+      value : 2
+    },
+    5: {
+      id    : 5,
+      text  : "Target",
+      new   : "Target",
+      value : 4
+    },
+    6: {
+      id    : 6,
+      text  : "Touch",
+      new   : "Touch",
+      value : 4
+    },
+    7: {
+      id    : 7,
+      text  : "Ray",
+      new   : "Ray",
+      value : 4
+    }
+  };
 
   $scope.seedList     = {};
   $scope.mainSeedList = {};
@@ -570,35 +614,45 @@ app.controller("epicSpell", function($scope) {
 
   $scope.factors      = {
     plus   : {
-      save      : "",
-      resist    : {
-        resist  : "",
-        dispel  : ""
+      area       : {
+        increase : "",
+        factor   : 0
       },
-      damage    : ""
+      save       : "",
+      resist     : {
+        resist   : "",
+        dispel   : ""
+      },
+      damage     : ""
     },
     minus  : {
-      backslash : "",
-      xp        : {
-        amount  : "",
-        all     : false
+      backslash  : "",
+      xp         : {
+        amount   : "",
+        all      : false
       },
-      ritual    : {
-        slot1   : "",
-        slot2   : "",
-        slot3   : "",
-        slot4   : "",
-        slot5   : "",
-        slot6   : "",
-        slot7   : "",
-        slot8   : "",
-        slot9   : "",
-        slotEp  : ""
+      ritual     : {
+        slot1    : "",
+        slot2    : "",
+        slot3    : "",
+        slot4    : "",
+        slot5    : "",
+        slot6    : "",
+        slot7    : "",
+        slot8    : "",
+        slot9    : "",
+        slotEp   : ""
       }
     },
+    adHoc  : [ // TODO Add ad hoc factors
+      {
+        text     : "",
+        value    : ""
+      }
+    ],
     global : {
-      permanent : false,
-      stone     : false
+      permanent  : false,
+      stone      : false
     }
   };
 
@@ -673,6 +727,20 @@ app.controller("epicSpell", function($scope) {
   // ##################################
   // # HERE THERE BE FACTORS HANDLING #
   // ##################################
+
+  /**
+   * @todo Fix "Area To" Checkbox
+   * @body Although using a somewhat similar `$watch` method to other variables, this one doesn't seem to be updating its model.
+   */
+  $scope.$watch("areaToList", function(newVal, oldVal, scope) {
+    for(var opt in newVal) {
+      if(newVal[opt]) {
+        scope.factors.plus.area.factor = scope.areaTo[opt].value;
+        scope.target = scope.areaTo[opt].new;
+        alert();
+      }
+    }
+  }, true);
 });
 
 app.filter("getFinalDC", function() {

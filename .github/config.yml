@@ -1,0 +1,26 @@
+####################################################
+#              ToDo Bot Configuration              #
+####################################################
+todo:
+  autoAssign: true
+
+####################################################
+#             Welcome Bot Configuration            #
+####################################################
+#                new-issue-welcome                 #
+# https://github.com/behaviorbot/new-issue-welcome #
+####################################################
+newIssueWelcomeComment: >
+  Thanks for opening your first issue here! Be sure to follow the issue template!
+####################################################
+#                  new-pr-welcome                  #
+# https://github.com/behaviorbot/new-pr-welcome    #
+####################################################
+newPRWelcomeComment: >
+  Thanks for opening this pull request! Please check out our contributing guidelines.
+####################################################
+#                  first-pr-merge                  #
+# https://github.com/behaviorbot/first-pr-merge    #
+####################################################
+firstPRMergeComment: >
+  Congrats on merging your first pull request! We here at behaviorbot are proud of you!

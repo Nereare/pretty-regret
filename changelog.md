@@ -29,7 +29,7 @@ Principles of a change log, excerpted from [Keep a Changelog](http://keepachange
 ### Added
  * Code of Conduct from [Contributor Covenant v1.4.1](https://www.contributor-covenant.org/).
  * Licenses:
-   - [The Unlicense](https://unlicense.org/) for the project;
+   - [Hippocratic License v1.2](https://firstdonoharm.dev/) for the project;
    - [Open Game License Version 1.0a](https://www.wizards.com/default.asp?x=d20/oglfaq/20040123f) for the SRD contents.
  * Git metafiles and ReadMe file.
  * Changelog file.

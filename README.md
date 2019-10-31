@@ -37,4 +37,4 @@ Please note that this project is released with a [Contributor Code of Conduct](c
 ## Legal Stuff
 
  * 'd20 System' and the 'd20 System' logo are trademarks of Wizards of the Coast, Inc. and are used according to the terms of the d20 System License. A copy of this License can be found at [www.wizards.com](http://www.wizards.com/default.asp?x=d20/article/srdarchive).
- * [The Unlicense](https://unlicense.org/) covers any code of this project.
+ * [Hippocratic License v1.2](https://firstdonoharm.dev/) covers any code of this project.

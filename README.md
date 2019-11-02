@@ -1,7 +1,7 @@
 # Pretty Regret
 
 [![GitHub package.json version](https://img.shields.io/github/package-json/v/Nereare/pretty-regret)](https://github.com/nereare/pretty-regret/)
-[![License](https://img.shields.io/github/license/Nereare/pretty-regret.svg)](https://github.com/Nereare/pretty-regret)
+[![License](https://img.shields.io/badge/license-Hippocratic%20License%20v1.1-red)](LICENSE.md)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](code-of-conduct.md)
 [![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/Nereare/pretty-regret)](https://libraries.io/github/Nereare/pretty-regret)
 
